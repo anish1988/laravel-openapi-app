@@ -16,11 +16,7 @@
                         {{ __('Dashboard111') }}
                     </x-nav-link>
                 </div>
-                <div class=" space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('openai.index')":active="request()->routeIs('openai.index')">
-                        {{ __('OpenAI') }}
-                    </x-nav-link>
-                </div>
+                
             </div>
 
             <!-- Settings Dropdown -->

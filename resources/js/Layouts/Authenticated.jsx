@@ -24,7 +24,7 @@ export default function Authenticated({ auth, header, children }) {
                                 <NavLink href={route('dashboard')} active={route().current('dashboard')}>
                                     Dashboard
                                 </NavLink>
-                                <NavLink href={route('dashboard')} active={route().current('dashboard')}>
+                                <NavLink href={route('openai.index')} active={route().current('openai.index')}>
                                     OPANAI
                                 </NavLink>
                             </div>

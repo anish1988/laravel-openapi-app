@@ -3,7 +3,9 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
-use Tightenco\Ziggy\Ziggy;
+//use Tightenco\Ziggy\Ziggy;
+use App\Http\Controllers\OpenAIController;
+//use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,6 +32,8 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/openai', [OpenAIController::class, 'index'])->name('openai.index');
+
+
 
 require __DIR__.'/auth.php';
 
